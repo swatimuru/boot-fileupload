@@ -1,0 +1,29 @@
+ac5e930a-9aaf-4995-8638-3fe39ea08575
+
+localhost:3306
+MySql : username : root
+		password : password
+		
+		
+SQL SERVER:
+username : user
+password : password
+
+
+ng new student		
+npm install bootstrap@3.3.7 --save
+npm install angular-datatable --save
+ng g c AddStudent
+ng g c StudentList
+ng g s Student
+ng g class Student
+
+npm install angular5-data-table --save
+
+ng version
+
+
+stackdriver
+docker
+microservices
+kubernetes

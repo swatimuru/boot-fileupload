@@ -1,0 +1,123 @@
+devops:
+
+development + operations
+
+-> unifying s/w dev and s/w operations
+-> shorter dev cycles, increased deployment freq, more dependable releases, inclose alignment with business objectives.
+
+-> from agile s/w dev
+-> agile s/w - small, freq cycles -> small pieces, deliver quickly for chgning goals
+
+
+dev team - speed & ops team - stability
+
+in devops:
+-> dev & ops - in same team
+-> share same goals(few prod failure, immediate recovery from failure)
+
+
+build automation:
+fast, consistent, repeatable, portable, reliable
+
+continuous integration -> merging constantly (CI server)
+continuous delivery -> continuously maintaining code in a deployable state
+continuous deployment -> frequently deploying small code changes to production
+robust automation -> reliable rollback when build causes an issue
+
+Infrastructuer as Code -> automation to create & change the server, instantces, environments, containers, other infrastructure
+					   -> consistency, reusability, scalability, self-documenting, simplify the complexity
+					   
+configuration drift
+orchestration - stability, scalability (like extending resources when the server load increases)
+Monitoring - better root cause analysis
+micro services - each microservice ==> small piece of application's overall functionality(LOOSELY COUPLED)
+
+
+periodic table of devops tools: xebialabs.com/periodic-table-of-devops-tools
+
+build automation tools: 
+Java - ant,maven,graddle
+javascript - npm, grunt, pulp
+make - unix
+
+continuous integretion tools: merge freq to single branch
+Jenkins, travisCI, bamboo
+
+Configuration mgmt tool:
+Ansible, puppet, salt - declarative configuration
+Chef - procedural configuration
+
+Virtualization tools - managing resources by virtual rather than physical
+hypervisor eg: VMWare ESX & ESXi, Microsoft Hyper-V
+
+containerization - lightwt, isolated pacakages that contain everything needed to run a piece of s/w.
+Docker - leading container tech
+
+Tools for monitoring: state & perf of applications
+Infrastructure monitoring -> data related -> cpu related, n/w statistics eg: cpu, ram
+Applicaiton performance monitoring -> perf & stability of individual parts of an applciation eg: response time, logs
+Sensu, NewRelic, AppDynamics
+
+Aggregation & Analytics - elastic stack
+
+Orchestration: provisioning resources (auto scale applications on usage, remove unhealthy nodes automatically)
+Docker Swarm - docker native, docker containers
+Kubernetes
+zookeeper
+Terraform
+
+
+Traditional non-cloud stack:
+Applications, data, runtime, middleware, o/s, virtualization, servers, storage, networking
+
+Infrastructure as service(cloud stack):
+o/s, virtualization, servers, storage, networking (all - Iaas stack)
+eg: amazon ec2 instances, microsoft azure VMs & containers, Google Compute Engine
+
+Platform as a service:
+runtime, middleware, o/s, virtualization, servers, storage, networking
+eg: AWS elastic beanstalk, Heroku, google app engine
+
+Software as a service:
+Applications, data, runtime, middleware, o/s, virtualization, servers, storage, networking
+eg: gmail, Microsoft OFfice 365
+
+Serverless(Function as a service):
+abstracted, small single purpose apps (Applications, data, runtime, middleware, o/s, virtualization, servers, storage, networking)
+deploy small and single purpose apps and pay for the compute resources used by the functions
+eg: AWS lambda, azure functions, Google cloud functions
+
+
+Google Cloud Devops features:
+Google App Engine -> Paas, supports micro service, serverless, continuos deployment
+Google compute engine -> Iaas, built-in orcestration
+can be managed by ansible, puppet, salt
+Google CLoud functions -> Faas, serverless
+Google CLoud SDK -> build own tools & automations
+Monitoring -> stackdriver
+Cloud deployment manager, Google Kubernetes engine
+
+Devops + Azure:
+Jenkins
+Continuos deployment triggers
+orchestration - azure contatiner registry, azure container service, azure web apps
+monitoring - (APM) azure application insights - supports machine learning
+Faas - Azure function
+
+Devops + Amazon:
+Amazon EC2(Elastic compute cloud) - Iaas, scalable
+aws elastic beanstalk - paas(load balancing, autoscaling)
+continuous integration - AWS Code Build
+continuous deployement - AWS COdeDeploy
+AWSCodePipeline - build -> deployment
+AWS CodeStar - project mgmt tools
+Iaas - CloudFormation
+OpsWork - Chef
+Faas - AWS lambda
+monitoring - amazon cloudwatch
+
+
+
+
+
+
